@@ -1,0 +1,12 @@
+/* HTML Taglari */
+
+h1{color: darkolivegreen;}
+h3{color: darkgreen;}
+hr{color: darkgreen;}
+body{background-color: beige;}
+
+/* Ekranı Bölmek için */
+
+.cont{display: flex;} 
+.left{flex: 2;} 
+.right{flex: 5;}

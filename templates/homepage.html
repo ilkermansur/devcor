@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+   <h3 style="text-align: center">CLI Command Runner</h3>
+   <hr>
+   {% block content %}
+   <p style="font-size: small; text-align : end"><i>developed by</i> imansur</p>
+   <hr><br>
+   <h2><pre>Device Info</pre></h2>
+   <form action="/" method="POST">
+    <label for="host"><pre>HOST IP</pre></label>
+    <input type="text" id="host" name="hostname" placeholder="host ip" value="192.168.71.246">
+    <label for="user"><pre>Username</pre></label>
+    <input type="text" id="user" name="username" placeholder="Username" value="cisco">
+    <label for="pass"><pre>Password</pre></label>
+    <input type="pass" id="password" name="password" placeholder="Password" value="cisco1"><br>
+    <label for="cmd"><pre>Input Command</pre></label>
+    <input type="text" id="cmd" name="command" placeholder="--input command--"><br>
+
+    <select name="choosen" id="choosen">
+        <option value="">-- Choose Command --</option>
+        <option value="show ip int brief">Interface Info</option>
+        <option value="sh ip arp">ARP Info</option>
+        <option value="sh ip route">ROUTE Info</option>
+        <option value="sh ver">VERSION Info</option>
+    </select><br>
+    
+    <input type="submit" value="Execute">
+   </form>
+
+{% endblock %}
+
+</body>
+</html>
+
